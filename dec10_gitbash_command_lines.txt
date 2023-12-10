@@ -1,0 +1,77 @@
+
+#xingyuan: these are typical git commands when I was actively pushing codes to github
+
+  468  git pull
+  469  git add .
+  470  git commit -m "très content de faire le pied de ce page d'acceuil!"
+  471  git push
+
+  472  git pull
+  473  git add .
+  474  git commit -m "start learning JavaScript"
+  475  git push
+  476  git pull
+
+  477  git pull
+  478  git add .
+  479  git commit -m "variable, operators"
+  480  git push
+
+  481  git pull
+  482  git add .
+  483  git commit -m "some basic actions"
+  484  git push
+
+  485  git pull
+  486  git add .
+  487  git commit -m "a bingo game as end of this chapter."
+  488  git push
+
+  489  git pull
+  490  git add .
+  491  git commit -m "apply js to add simple navigation highlighting to project uworks05"
+  492  git push
+
+  493  git pull
+  494  git add .
+  495  git commit -m "test a lot of cast(converting) among different data types, nice exercise of brain."
+  496  git push
+
+  497  git pull
+  498  git add .
+  499  git commit -m "control flow"
+  500  git push
+
+#xingyuan: 20231210 a new start
+
+  501  git init 
+  502  git add .
+  503  git commit - m "Add existing Secena projects files to Git."
+  504  git commit -m "Add existing Secena projects files to Git."
+  505  git remote add origin https://github.com/muxingyuan/ShoppingWeb.git
+  506  git push -u -f origin master
+
+#xingyuan: generate new token according to git documentation 
+https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/managing-your-personal-access-tokens#creating-a-personal-access-token-classic
+
+  515  $TOKEN = "xxx"
+  516  export $TOKEN
+  518  echo $TOKEN
+
+#xingyuan: config user and password for easy push;
+#xingyuan: alternatively, can config only user and reply TOKEN in pop up window for each push;
+
+  511  git config
+  512  git config user.name "muxingyuan"
+  513  git config user.password $TOKEN
+
+xingyuan: after TOKEN is configured, do push
+
+  514  git push -u -f origin master
+
+xingyuan: export history command lines for future easy reference
+  521  ls
+  522  pwd
+  529  touch dec10_gitbash_command_lines.txt
+  532  history
+  533  history > dec10_gitbash_command_lines.txt
