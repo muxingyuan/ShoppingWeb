@@ -1,0 +1,59 @@
+package com.project.survey;
+
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.Statement;
+
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+
+@WebServlet("/EntryForm")
+public class EntryForm extends HttpServlet {
+	private static final long serialVersionUID = 1L;
+       
+
+    public EntryForm() {
+        super();
+    }
+
+
+	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		response.getWriter().append("Served at: ").append(request.getContextPath());
+	}
+
+
+	protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
+		
+		String Sn = request.getParameter("surveyname");
+		
+		PrintWriter out = response.getWriter();
+		
+        out.println("<!DOCTYPE html>");
+        out.println("<html>");
+        out.println("<head>");
+        out.println("<title>Employee Details</title>");            
+        out.println("</head>");
+        out.println("<body>");
+        out.println("<h1>Employee Details</h1>");
+        out.println("ID:"+Sn+"</br></br>");
+           
+        
+        out.println("</body>");
+        out.println("</html>");
+		
+		try {
+		Class.forName("com.mysql.jdbc.Driver");
+		Connection con = DriverManager.getConnection("jdbc:mysql://localhost:3306/surveydb","root","admin");
+		Statement insert = con.createStatement();
+		insert.executeUpdate("insert into servey (survey_name) values ('" + Sn +"');");
+		System.out.println("successfully inserted into");
+		}catch(Exception e){out.print(e);}
+	}
+
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Registration Page</title>
+</head>
+<body>
+	<form name="regForm" method="post" action="CustomerServlet">
+		First Name: <input type="text" name="firstname"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 30)<br/><br/>
+		Last Name: <input type="text" name="lastname"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 30)<br/><br/>
+		Phone: <input type="text" name="phone"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 15)<br/><br/>
+		Phone Type: <input type="radio" id="Home" name="phonetype" value="Home"/>  <label for="Home">Home</label>
+		<input type="radio" id="Office" name="phonetype" value="Office"/><label for="Office">Office</label>
+		<input type="radio" id="Mobile" name="phonetype" value="Mobile"/><label for="Mobile">Mobile</label>
+		<br/><br/>		
+		Address: <input type="text" name="address"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 100)<br/><br/>
+		City: <input type="text" name="city"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 30)<br/><br/>
+		Province: <input type="text" name="province"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 2)<br/><br/>
+		Postal Code: <input type="text" name="pc"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 6)<br/><br/>
+		Address Type: <input type="radio" id="Home" name="addresstype"/><label for="Home">Home</label>
+		<input type="radio" id="Office" name="addresstype" value="Office"/><label for="Office">Office</label>
+		<input type="radio" id="Cottage" name="addresstype" value="Cottage"/><label for="Cottage">Mobile</label>	
+		<br/><br/>
+		SIN: <input type="text" name="sin"/>&nbsp;&nbsp;&nbsp;&nbsp;(max. 9)<br/><br/>
+		<button type="submit">Submit</button>
+		&nbsp;&nbsp;&nbsp;&nbsp;
+		<button type="reset">Reset</button>
+		<br/><br/>
+	</form>
+</body>
+</html>

@@ -1,0 +1,10 @@
+127.0.0.1 - - [14/Nov/2023:19:07:54 -0500] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:07:56 -0500] "GET /classproject/ HTTP/1.1" 200 515
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:07:56 -0500] "GET /classproject/assets/style.css HTTP/1.1" 200 113
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:08:23 -0500] "GET /classproject/BeanDisplay.jsp HTTP/1.1" 500 2704
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:10:27 -0500] "GET /classproject/BeanDisplay.jsp HTTP/1.1" 500 2704
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:11:08 -0500] "GET /classproject/BeanDisplay.jsp HTTP/1.1" 500 2704
+127.0.0.1 - - [14/Nov/2023:19:16:36 -0500] "GET / HTTP/1.1" 404 992
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:16:37 -0500] "GET /classproject/ HTTP/1.1" 200 515
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:16:48 -0500] "GET /classproject/BeanDisplay.jsp HTTP/1.1" 500 2704
+0:0:0:0:0:0:0:1 - - [14/Nov/2023:19:17:25 -0500] "GET /classproject/BeanDisplay.jsp HTTP/1.1" 500 2336
